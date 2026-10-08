@@ -10,6 +10,9 @@ class GreetTest(unittest.TestCase):
     def test_name(self):
         self.assertEqual(greet("OVHcloud"), "Hello, OVHcloud!")
 
+    def test_loud(self):
+        self.assertEqual(greet("OVHcloud", loud=True), "HELLO, OVHCLOUD!!!")
+
 
 if __name__ == "__main__":
     unittest.main()
